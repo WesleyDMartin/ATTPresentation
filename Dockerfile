@@ -15,7 +15,7 @@ RUN mkdir -p /opt/source-code/templates
 
 # Now we need to copy in the code that we need
 COPY index.py /opt/source-code
-COPY templates/index.html /opt/source-code/templates
+COPY index.html /opt/source-code/templates
 
 ENTRYPOINT FLASK_APP=/opt/source-code/index.py flask run --host=0.0.0.0
 
